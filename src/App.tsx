@@ -115,7 +115,7 @@ const styles = {
     marginBottom: '20px',
   },
   input: {
-    width: '100%',
+    width: '90%',
     padding: '8px 12px',
     border: '1px solid #ddd',
     borderRadius: '5px',
@@ -345,7 +345,7 @@ function App() {
             <div>
               <label style={styles.label}>{t.keyType}</label>
               <select
-                  style={styles.input}
+                  style={{...styles.input, width: '100%'}}
                   value={customConfig.type}
                   onChange={(e) => setCustomConfig(prev => ({ ...prev, type: e.target.value as 'default' | 'number' | 'letter' }))}
               >
