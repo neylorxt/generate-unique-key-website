@@ -1,69 +1,35 @@
-# React + TypeScript + Vite
+# 🎯 generate-unique-key - Demo Site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ce site est une démonstration interactive du package **[@neylorxt/generate-unique-key](https://www.npmjs.com/package/@neylorxt/generate-unique-key)**.  
+Il permet de générer, valider et copier des clés uniques directement dans votre navigateur.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Lien vers le site
 
-## Expanding the ESLint configuration
+👉 **[Voir la démo en ligne](https://generate-unique-key.vercel.app)** *(ajoute l’URL du site)*
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📦 Lien vers le package
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- **NPM** : [https://www.npmjs.com/package/@neylorxt/generate-unique-key](https://www.npmjs.com/package/@neylorxt/generate-unique-key)
+- **GitHub** : [https://github.com/neylorxt/generate-unique-key](https://github.com/neylorxt/generate-unique-key)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🔑 Fonctionnalités du site
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Génération de clés uniques **personnalisées** : type (alphanumérique, numérique, alphabétique), longueur, séparateur et intervalle.
+- **Génération rapide** de clés prédéfinies (UUID, clés courtes, custom, etc.).
+- **Validation** de clés : général, numérique ou alphabétique.
+- Historique des **10 dernières clés générées**.
+- Copie facile des clés dans le presse-papiers.
+- Interface **bilingue** (🇬🇧 Anglais / 🇫🇷 Français).
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 🛠️ Exemple d'utilisation du package
+
+```bash
+npm install @neylorxt/generate-unique-key
